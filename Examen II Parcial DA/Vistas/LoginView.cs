@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examen_II_Parcial_DA.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Examen_II_Parcial_DA
+namespace Examen_II_Parcial_DA.Vistas
 {
-    public partial class Form1 : Form
+    public partial class LoginView : Form
     {
-        public Form1()
+        public LoginView()
         {
             InitializeComponent();
+            LoginController controlador = new LoginController(this);
         }
     }
 }
