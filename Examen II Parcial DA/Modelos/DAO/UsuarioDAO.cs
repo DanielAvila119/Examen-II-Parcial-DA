@@ -45,7 +45,7 @@ namespace Examen_II_Parcial_DA.Modelos.DAO
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" INSERT INTO USUARIO ");
-                sql.Append(" VALUES (@Nombre, @Email, @Clave, @EsAdministrador); ");
+                sql.Append(" VALUES (@Nombre, @Email, @Clave); ");
 
 
                 comando.Connection = MiExamenConexion;

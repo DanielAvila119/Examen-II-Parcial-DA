@@ -33,10 +33,10 @@ namespace Examen_II_Parcial_DA.Controladores
             esValido = userDAO.ValidarUsuario(user);
             if (esValido)
             {
-                MessageBox.Show("Usuario Correcto");
-                //MenuView menu = new MenuView();
-                //vista.Hide();
-                //menu.Show();
+                //MessageBox.Show("Usuario Correcto");
+                MenuView menu = new MenuView();
+                vista.Hide();
+                menu.Show();
             }
             else
             {
