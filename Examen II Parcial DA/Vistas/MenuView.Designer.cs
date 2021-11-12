@@ -40,7 +40,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx4 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.ClienteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.SoporteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ConsultaTicketTsoolStripButton = new System.Windows.Forms.ToolStripButton();
             this.EstadoToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -85,7 +85,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem5;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(719, 139);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -121,7 +121,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripEx5.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx5.Image = null;
             this.toolStripEx5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.ClienteToolStripButton});
             this.toolStripEx5.Location = new System.Drawing.Point(0, 1);
             this.toolStripEx5.Name = "toolStripEx5";
             this.toolStripEx5.Office12Mode = false;
@@ -270,16 +270,17 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripEx4.Size = new System.Drawing.Size(235, 73);
             this.toolStripEx4.TabIndex = 0;
             // 
-            // toolStripButton1
+            // ClienteToolStripButton
             // 
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton1.Image = global::Examen_II_Parcial_DA.Properties.Resources.Clientes;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(113, 56);
-            this.toolStripButton1.Text = "Lista de Clientes";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ClienteToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClienteToolStripButton.Image = global::Examen_II_Parcial_DA.Properties.Resources.Clientes;
+            this.ClienteToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ClienteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ClienteToolStripButton.Name = "ClienteToolStripButton";
+            this.ClienteToolStripButton.Size = new System.Drawing.Size(113, 56);
+            this.ClienteToolStripButton.Text = "Lista de Clientes";
+            this.ClienteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ClienteToolStripButton.Click += new System.EventHandler(this.ClienteToolStripButton_Click);
             // 
             // SoporteToolStripButton
             // 
@@ -374,6 +375,6 @@ namespace Examen_II_Parcial_DA.Vistas
         private System.Windows.Forms.ToolStripButton DetalleToolStripButton;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem5;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx5;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton ClienteToolStripButton;
     }
 }

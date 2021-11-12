@@ -14,5 +14,25 @@ namespace Examen_II_Parcial_DA.Vistas
         {
             InitializeComponent();
         }
+        ClientesView vistaClientes;
+        private void ClienteToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaClientes == null)
+            {
+                vistaClientes = new ClientesView();
+                vistaClientes.MdiParent = this;
+                vistaClientes.FormClosed += VistaClientes_FormClosed;
+                vistaClientes.Show();
+            }
+            else
+            {
+                vistaClientes.Activate();
+            }
+        }
+
+        private void VistaClientes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaClientes = null;
+        }
     }
 }
