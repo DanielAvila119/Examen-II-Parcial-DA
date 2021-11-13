@@ -43,6 +43,8 @@ namespace Examen_II_Parcial_DA.Vistas
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_Dispositivo = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_numTicket = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -162,11 +164,29 @@ namespace Examen_II_Parcial_DA.Vistas
             this.txt_Dispositivo.Size = new System.Drawing.Size(300, 20);
             this.txt_Dispositivo.TabIndex = 13;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(107, 340);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(95, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Numero de Ticket:";
+            // 
+            // txt_numTicket
+            // 
+            this.txt_numTicket.Location = new System.Drawing.Point(209, 340);
+            this.txt_numTicket.Name = "txt_numTicket";
+            this.txt_numTicket.Size = new System.Drawing.Size(89, 20);
+            this.txt_numTicket.TabIndex = 15;
+            // 
             // TicketsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 346);
+            this.ClientSize = new System.Drawing.Size(423, 388);
+            this.Controls.Add(this.txt_numTicket);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_Dispositivo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_ID);
@@ -204,5 +224,7 @@ namespace Examen_II_Parcial_DA.Vistas
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txt_Dispositivo;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_numTicket;
     }
 }
