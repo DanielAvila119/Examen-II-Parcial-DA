@@ -16,13 +16,12 @@ namespace Examen_II_Parcial_DA.Modelos.DAO
         SqlCommand comando = new SqlCommand();
         public bool InsertarNuevoCliente(Cliente cliente)
         {
-            //bool inserto = false;
+            bool inserto = false;
             try
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" INSERT INTO CLIENTE ");
                 sql.Append(" VALUES (@Identidad, @Nombre, @Email, @Direccion); ");
-
                 comando.Connection = MiExamenConexion;
                 MiExamenConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;
@@ -32,17 +31,16 @@ namespace Examen_II_Parcial_DA.Modelos.DAO
                 comando.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = cliente.Email;
                 comando.Parameters.Add("@Direccion", SqlDbType.NVarChar, 100).Value = cliente.Direccion;
                 comando.ExecuteNonQuery();
-                //inserto = true;
+                inserto = true;
                 MiExamenConexion.Close();
-                return true;
+                //return true;
                 
             }
             catch (Exception)
             {
-
-                return false;
+                inserto = false;
             }
-            //return inserto;
+            return inserto;
         }
         public DataTable GetCliente()
         {
@@ -50,7 +48,7 @@ namespace Examen_II_Parcial_DA.Modelos.DAO
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" SELECT FROM CLIENTE ");
+                sql.Append(" SELECT * FROM CLIENTE ");
                 comando.Connection = MiExamenConexion;
                 MiExamenConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;
@@ -73,7 +71,7 @@ namespace Examen_II_Parcial_DA.Modelos.DAO
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" UPDATE CLIENTE ");
-                sql.Append(" SET IDENTIDAD = @Identidad, NOMBRE = @Nombre, EMAIL = @Email, DIRECCION = @Direccion; ");
+                sql.Append(" SET IDENTIDAD = @Identidad, NOMBRE = @Nombre, EMAIL = @Email, DIRECCION = @Direccion ");
                 sql.Append(" WHERE ID = @Id; ");
 
                 comando.Connection = MiExamenConexion;
@@ -99,7 +97,7 @@ namespace Examen_II_Parcial_DA.Modelos.DAO
         }
         public bool EliminarCliente(int id)
         {
-            bool modifico = false;
+            bool elimino = false;
             try
             {
                 StringBuilder sql = new StringBuilder();
@@ -112,16 +110,16 @@ namespace Examen_II_Parcial_DA.Modelos.DAO
                 comando.CommandText = sql.ToString();
                 comando.Parameters.Add("@Id", SqlDbType.Int).Value = id;
                 comando.ExecuteNonQuery();
-                modifico = true;
+                elimino = true;
                 MiExamenConexion.Close();
 
             }
             catch (Exception)
             {
 
-                return modifico;
+                return elimino;
             }
-            return modifico;
+            return elimino;
         }
     }
 }

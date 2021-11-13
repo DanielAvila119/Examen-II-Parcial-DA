@@ -121,8 +121,25 @@ namespace Examen_II_Parcial_DA.Controladores
 
                     }
                 }
+                else if (operacion == "Modificar")
+                {
+                    cliente.Id = Convert.ToInt32(vista.txt_ID.Text);
+                    bool modifico = clienteDAO.ActualizarCliente(cliente);
+                    if (modifico)
+                    {
+                        DeshabilitarControles();
+                        LimpiarControles();
+
+                        MessageBox.Show("¡Usuario Modificado Exitosamente!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ListarClientes();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se puedo Modificar el usuario. Vuelvalo a intentar", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }

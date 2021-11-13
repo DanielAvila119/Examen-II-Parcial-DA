@@ -150,7 +150,6 @@ namespace Examen_II_Parcial_DA.Vistas
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Enabled = false;
             this.btn_Cancelar.Location = new System.Drawing.Point(443, 220);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(94, 32);
@@ -160,7 +159,6 @@ namespace Examen_II_Parcial_DA.Vistas
             // 
             // btn_Eliminar
             // 
-            this.btn_Eliminar.Enabled = false;
             this.btn_Eliminar.Location = new System.Drawing.Point(343, 220);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(94, 32);

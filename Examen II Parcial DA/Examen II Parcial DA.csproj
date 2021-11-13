@@ -63,12 +63,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\DetalleController.cs" />
+    <Compile Include="Controladores\EstadoTicketsController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
     <Compile Include="Controladores\ClienteController.cs" />
+    <Compile Include="Controladores\SoporteController.cs" />
+    <Compile Include="Controladores\TicketsController.cs" />
     <Compile Include="Modelos\DAO\ClienteDAO.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
+    <Compile Include="Modelos\DAO\DetalleDAO.cs" />
+    <Compile Include="Modelos\DAO\EstadoTicketsDAO.cs" />
+    <Compile Include="Modelos\DAO\SoporteDAO.cs" />
+    <Compile Include="Modelos\DAO\TicketsDAO.cs" />
     <Compile Include="Modelos\DAO\UsuarioDAO.cs" />
     <Compile Include="Modelos\Entidades\Cliente.cs" />
+    <Compile Include="Modelos\Entidades\Detalle.cs" />
+    <Compile Include="Modelos\Entidades\EstadoTickets.cs" />
+    <Compile Include="Modelos\Entidades\Soporte.cs" />
+    <Compile Include="Modelos\Entidades\Tickets.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
