@@ -15,6 +15,7 @@ namespace Examen_II_Parcial_DA.Vistas
             InitializeComponent();
         }
         ClientesView vistaClientes;
+        SoporteView vistaServicio;
         private void ClienteToolStripButton_Click(object sender, EventArgs e)
         {
             if (vistaClientes == null)
@@ -33,6 +34,26 @@ namespace Examen_II_Parcial_DA.Vistas
         private void VistaClientes_FormClosed(object sender, FormClosedEventArgs e)
         {
             vistaClientes = null;
+        }
+
+        private void SoporteToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaServicio == null)
+            {
+                vistaServicio = new SoporteView();
+                vistaServicio.MdiParent = this;
+                vistaServicio.FormClosed += VistaServicio_FormClosed;
+                vistaServicio.Show();
+            }
+            else
+            {
+                vistaServicio.Activate();
+            }
+        }
+
+        private void VistaServicio_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaServicio = null;
         }
     }
 }

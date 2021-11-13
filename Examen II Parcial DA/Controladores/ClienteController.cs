@@ -145,9 +145,6 @@ namespace Examen_II_Parcial_DA.Controladores
             }
 
         }
-
-        
-
         private void HabilitarControles()
         {
             //Habilitar TextBoxs

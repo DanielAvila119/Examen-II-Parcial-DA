@@ -32,18 +32,18 @@ namespace Examen_II_Parcial_DA.Vistas
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem5 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx5 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.ClienteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.SoporteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.ConsultaTicketTsoolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.EstadoToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx4 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.ClienteToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.SoporteToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.ConsultaTicketTsoolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.EstadoToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.DetalleToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
@@ -85,7 +85,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem5;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(719, 139);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -108,7 +108,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripTabItem5.Panel.TabIndex = 6;
             this.toolStripTabItem5.Panel.Text = "Clientes";
             this.toolStripTabItem5.Position = 0;
-            this.toolStripTabItem5.Size = new System.Drawing.Size(63, 23);
+            this.toolStripTabItem5.Size = new System.Drawing.Size(73, 30);
             this.toolStripTabItem5.Tag = "5";
             this.toolStripTabItem5.Text = "Clientes";
             // 
@@ -130,6 +130,18 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripEx5.Size = new System.Drawing.Size(223, 73);
             this.toolStripEx5.TabIndex = 0;
             // 
+            // ClienteToolStripButton
+            // 
+            this.ClienteToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClienteToolStripButton.Image = global::Examen_II_Parcial_DA.Properties.Resources.Clientes;
+            this.ClienteToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ClienteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ClienteToolStripButton.Name = "ClienteToolStripButton";
+            this.ClienteToolStripButton.Size = new System.Drawing.Size(113, 56);
+            this.ClienteToolStripButton.Text = "Lista de Clientes";
+            this.ClienteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ClienteToolStripButton.Click += new System.EventHandler(this.ClienteToolStripButton_Click);
+            // 
             // toolStripTabItem1
             // 
             this.toolStripTabItem1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -143,7 +155,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripTabItem1.Panel.TabIndex = 2;
             this.toolStripTabItem1.Panel.Text = "Soporte";
             this.toolStripTabItem1.Position = 1;
-            this.toolStripTabItem1.Size = new System.Drawing.Size(62, 23);
+            this.toolStripTabItem1.Size = new System.Drawing.Size(72, 30);
             this.toolStripTabItem1.Tag = "1";
             this.toolStripTabItem1.Text = "Soporte";
             // 
@@ -165,6 +177,18 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripEx1.Size = new System.Drawing.Size(208, 73);
             this.toolStripEx1.TabIndex = 0;
             // 
+            // SoporteToolStripButton
+            // 
+            this.SoporteToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SoporteToolStripButton.Image = global::Examen_II_Parcial_DA.Properties.Resources.Soporte;
+            this.SoporteToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.SoporteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SoporteToolStripButton.Name = "SoporteToolStripButton";
+            this.SoporteToolStripButton.Size = new System.Drawing.Size(117, 56);
+            this.SoporteToolStripButton.Text = "Tipos de Soporte";
+            this.SoporteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.SoporteToolStripButton.Click += new System.EventHandler(this.SoporteToolStripButton_Click);
+            // 
             // toolStripTabItem3
             // 
             this.toolStripTabItem3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -178,7 +202,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripTabItem3.Panel.TabIndex = 4;
             this.toolStripTabItem3.Panel.Text = "Tickets";
             this.toolStripTabItem3.Position = 2;
-            this.toolStripTabItem3.Size = new System.Drawing.Size(57, 23);
+            this.toolStripTabItem3.Size = new System.Drawing.Size(67, 30);
             this.toolStripTabItem3.Tag = "3";
             this.toolStripTabItem3.Text = "Tickets";
             // 
@@ -200,6 +224,17 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripEx3.Size = new System.Drawing.Size(235, 73);
             this.toolStripEx3.TabIndex = 0;
             // 
+            // ConsultaTicketTsoolStripButton
+            // 
+            this.ConsultaTicketTsoolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConsultaTicketTsoolStripButton.Image = global::Examen_II_Parcial_DA.Properties.Resources.Tickets;
+            this.ConsultaTicketTsoolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ConsultaTicketTsoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ConsultaTicketTsoolStripButton.Name = "ConsultaTicketTsoolStripButton";
+            this.ConsultaTicketTsoolStripButton.Size = new System.Drawing.Size(132, 56);
+            this.ConsultaTicketTsoolStripButton.Text = "Consulta de Tickets";
+            this.ConsultaTicketTsoolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // toolStripTabItem2
             // 
             this.toolStripTabItem2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -213,7 +248,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripTabItem2.Panel.TabIndex = 3;
             this.toolStripTabItem2.Panel.Text = "Estado";
             this.toolStripTabItem2.Position = 3;
-            this.toolStripTabItem2.Size = new System.Drawing.Size(55, 23);
+            this.toolStripTabItem2.Size = new System.Drawing.Size(65, 30);
             this.toolStripTabItem2.Tag = "2";
             this.toolStripTabItem2.Text = "Estado";
             // 
@@ -235,6 +270,17 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripEx2.Size = new System.Drawing.Size(186, 73);
             this.toolStripEx2.TabIndex = 0;
             // 
+            // EstadoToolStripButton
+            // 
+            this.EstadoToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EstadoToolStripButton.Image = global::Examen_II_Parcial_DA.Properties.Resources.Estado_Ticket;
+            this.EstadoToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.EstadoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.EstadoToolStripButton.Name = "EstadoToolStripButton";
+            this.EstadoToolStripButton.Size = new System.Drawing.Size(119, 56);
+            this.EstadoToolStripButton.Text = "Estado de Tickets";
+            this.EstadoToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // toolStripTabItem4
             // 
             this.toolStripTabItem4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -248,7 +294,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripTabItem4.Panel.TabIndex = 5;
             this.toolStripTabItem4.Panel.Text = "Detalles";
             this.toolStripTabItem4.Position = 4;
-            this.toolStripTabItem4.Size = new System.Drawing.Size(64, 23);
+            this.toolStripTabItem4.Size = new System.Drawing.Size(74, 30);
             this.toolStripTabItem4.Tag = "4";
             this.toolStripTabItem4.Text = "Detalles";
             // 
@@ -269,51 +315,6 @@ namespace Examen_II_Parcial_DA.Vistas
             this.toolStripEx4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.toolStripEx4.Size = new System.Drawing.Size(235, 73);
             this.toolStripEx4.TabIndex = 0;
-            // 
-            // ClienteToolStripButton
-            // 
-            this.ClienteToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClienteToolStripButton.Image = global::Examen_II_Parcial_DA.Properties.Resources.Clientes;
-            this.ClienteToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ClienteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ClienteToolStripButton.Name = "ClienteToolStripButton";
-            this.ClienteToolStripButton.Size = new System.Drawing.Size(113, 56);
-            this.ClienteToolStripButton.Text = "Lista de Clientes";
-            this.ClienteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ClienteToolStripButton.Click += new System.EventHandler(this.ClienteToolStripButton_Click);
-            // 
-            // SoporteToolStripButton
-            // 
-            this.SoporteToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SoporteToolStripButton.Image = global::Examen_II_Parcial_DA.Properties.Resources.Soporte;
-            this.SoporteToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.SoporteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SoporteToolStripButton.Name = "SoporteToolStripButton";
-            this.SoporteToolStripButton.Size = new System.Drawing.Size(117, 56);
-            this.SoporteToolStripButton.Text = "Tipos de Soporte";
-            this.SoporteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // ConsultaTicketTsoolStripButton
-            // 
-            this.ConsultaTicketTsoolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConsultaTicketTsoolStripButton.Image = global::Examen_II_Parcial_DA.Properties.Resources.Tickets;
-            this.ConsultaTicketTsoolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ConsultaTicketTsoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ConsultaTicketTsoolStripButton.Name = "ConsultaTicketTsoolStripButton";
-            this.ConsultaTicketTsoolStripButton.Size = new System.Drawing.Size(132, 56);
-            this.ConsultaTicketTsoolStripButton.Text = "Consulta de Tickets";
-            this.ConsultaTicketTsoolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // EstadoToolStripButton
-            // 
-            this.EstadoToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EstadoToolStripButton.Image = global::Examen_II_Parcial_DA.Properties.Resources.Estado_Ticket;
-            this.EstadoToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.EstadoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.EstadoToolStripButton.Name = "EstadoToolStripButton";
-            this.EstadoToolStripButton.Size = new System.Drawing.Size(119, 56);
-            this.EstadoToolStripButton.Text = "Estado de Tickets";
-            this.EstadoToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // DetalleToolStripButton
             // 
