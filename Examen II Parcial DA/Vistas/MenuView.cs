@@ -18,6 +18,7 @@ namespace Examen_II_Parcial_DA.Vistas
         SoporteView vistaServicio;
         EstadoTicketsView vistaEstado;
         TicketsView vistaTicket;
+        DetalleView vistaDetalle;
         private void ClienteToolStripButton_Click(object sender, EventArgs e)
         {
             if (vistaClientes == null)
@@ -96,6 +97,26 @@ namespace Examen_II_Parcial_DA.Vistas
         private void VistaTicket_FormClosed(object sender, FormClosedEventArgs e)
         {
             vistaTicket = null;
+        }
+
+        private void DetalleToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaDetalle == null)
+            {
+                vistaDetalle = new DetalleView();
+                vistaDetalle.MdiParent = this;
+                vistaDetalle.FormClosed += VistaDetalle_FormClosed;
+                vistaDetalle.Show();
+            }
+            else
+            {
+                vistaDetalle.Activate();
+            }
+        }
+
+        private void VistaDetalle_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaDetalle = null;
         }
     }
 }
