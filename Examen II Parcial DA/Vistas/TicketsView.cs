@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examen_II_Parcial_DA.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace Examen_II_Parcial_DA.Vistas
         public TicketsView()
         {
             InitializeComponent();
+            TicketsController controlador = new TicketsController(this);
         }
     }
 }

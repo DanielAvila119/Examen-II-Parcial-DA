@@ -234,6 +234,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.ConsultaTicketTsoolStripButton.Size = new System.Drawing.Size(132, 56);
             this.ConsultaTicketTsoolStripButton.Text = "Consulta de Tickets";
             this.ConsultaTicketTsoolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ConsultaTicketTsoolStripButton.Click += new System.EventHandler(this.ConsultaTicketTsoolStripButton_Click);
             // 
             // toolStripTabItem2
             // 
