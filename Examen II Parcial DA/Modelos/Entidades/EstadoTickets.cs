@@ -8,6 +8,8 @@ namespace Examen_II_Parcial_DA.Modelos.Entidades
 {
     public class EstadoTickets
     {
-
+        public int Id { get; set; }
+        public string numeroTicket { get; set; }
+        public string estadoTicket { get; set; }
     }
 }

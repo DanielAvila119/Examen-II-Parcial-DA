@@ -122,7 +122,7 @@ namespace Examen_II_Parcial_DA.Vistas
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(445, 214);
+            this.btn_Cancelar.Location = new System.Drawing.Point(426, 214);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(94, 32);
             this.btn_Cancelar.TabIndex = 44;
@@ -131,7 +131,7 @@ namespace Examen_II_Parcial_DA.Vistas
             // 
             // btn_Eliminar
             // 
-            this.btn_Eliminar.Location = new System.Drawing.Point(345, 214);
+            this.btn_Eliminar.Location = new System.Drawing.Point(326, 214);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(94, 32);
             this.btn_Eliminar.TabIndex = 43;
@@ -141,7 +141,7 @@ namespace Examen_II_Parcial_DA.Vistas
             // btn_Guardar
             // 
             this.btn_Guardar.Enabled = false;
-            this.btn_Guardar.Location = new System.Drawing.Point(245, 214);
+            this.btn_Guardar.Location = new System.Drawing.Point(226, 214);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(94, 32);
             this.btn_Guardar.TabIndex = 42;
@@ -150,7 +150,7 @@ namespace Examen_II_Parcial_DA.Vistas
             // 
             // btn_Nuevo
             // 
-            this.btn_Nuevo.Location = new System.Drawing.Point(45, 214);
+            this.btn_Nuevo.Location = new System.Drawing.Point(26, 214);
             this.btn_Nuevo.Name = "btn_Nuevo";
             this.btn_Nuevo.Size = new System.Drawing.Size(94, 32);
             this.btn_Nuevo.TabIndex = 40;
@@ -159,7 +159,7 @@ namespace Examen_II_Parcial_DA.Vistas
             // 
             // btn_Modificar
             // 
-            this.btn_Modificar.Location = new System.Drawing.Point(145, 214);
+            this.btn_Modificar.Location = new System.Drawing.Point(126, 214);
             this.btn_Modificar.Name = "btn_Modificar";
             this.btn_Modificar.Size = new System.Drawing.Size(94, 32);
             this.btn_Modificar.TabIndex = 41;

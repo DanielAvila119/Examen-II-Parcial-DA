@@ -85,7 +85,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(719, 139);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -280,6 +280,7 @@ namespace Examen_II_Parcial_DA.Vistas
             this.EstadoToolStripButton.Size = new System.Drawing.Size(119, 56);
             this.EstadoToolStripButton.Text = "Estado de Tickets";
             this.EstadoToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.EstadoToolStripButton.Click += new System.EventHandler(this.EstadoToolStripButton_Click);
             // 
             // toolStripTabItem4
             // 
